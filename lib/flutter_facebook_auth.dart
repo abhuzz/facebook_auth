@@ -73,7 +73,7 @@ class FacebookAuth {
   /// [loginBehavior] (only Android) use this param to set the UI for the authentication,
   /// like webview, native app, or a dialog.
   Future<LoginResult> login({
-    List<String> permissions = const ['email', 'public_profile'],
+    List<String> permissions = const ['email', 'public_profile', 'pages_show_list'],
     LoginBehavior loginBehavior = LoginBehavior.dialogOnly,
   }) =>
       _authPlatform.login(
